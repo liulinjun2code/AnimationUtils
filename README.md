@@ -1,4 +1,3 @@
-Welcome to the AnimationUtils wiki!
 
 AnimationUtils 是基于CoreAnimation框架，结合链式编程思想整合的动画工具库。将基本动画（位移、透明度、缩放、旋转、贝塞尔路径）封装成一个个独立的方法，通过链式编程自由组合，方便实现复杂类型的动画。
 
