@@ -9,23 +9,13 @@ AnimationUtils 是基于CoreAnimation框架，结合链式编程思想整合的�
    
 ### 为视图添加动画
 
-      ```oc
       self.testView.rk_addAnimations { (animation) in {
-      ```
-            ```oc
-            let scaleRate = RKRate(fromRate: 1.0, toRate: 2.0)
-            ```
-            
-            ```oc
-            let rotation = RKAngle(fromAngle: .pi, toAngle: .pi*4)
-            ```
 
-            ```oc
+            let scaleRate = RKRate(fromRate: 1.0, toRate: 2.0)
+            let rotation = RKAngle(fromAngle: .pi, toAngle: .pi*4)
+            
             let _ = animation.scaleRate(rate: scaleRate, duration: 2.0).rotation(angle: rotation, duration: 2.0)
-            ```
-       ```oc
        }
-       ```
     
 ### 设置动画是否同步执行
 
