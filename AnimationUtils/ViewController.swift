@@ -25,7 +25,6 @@ class ViewController: UIViewController {
         
         //抖动效果
 //        RKShaper.addShake(view: self.redView, angle: 5)
-
     }
     
     
@@ -60,7 +59,7 @@ class ViewController: UIViewController {
         }
         */
         
-        /* 基本动画 - 组合动画
+        // 基本动画 - 组合动画
         self.redView.rk_addAnimations { (animation) in
 
             let point = RKPoint(fromPoint: self.redView.layer.position, toPoint: CGPoint(x: 100, y: 400))
@@ -75,7 +74,7 @@ class ViewController: UIViewController {
 
             let _ = animation.alpha(alpha: alpha, duration: 2.0).toPoint(point: point, duration: 4.0).scaleRate(rate: scaleRate, duration: 6.0).scaleSize(size: scaleSize, duration: 8.0).rotation(angle: rotation, duration: 10.0)
         }
-         */
+         //*/
     }
     
     @IBAction func pauseAnimation(_ sender: UIButton) {

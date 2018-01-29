@@ -24,7 +24,9 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = "AnimationUtls is based of CoreAnimation, is easy to create a animation"
+  s.description  = <<-DESC
+    "AnimationUtls is based of CoreAnimation, is easy to create a animation"
+  DESC
 
   s.homepage     = "https://github.com/liulinjun2code/AnimationUtils"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -78,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/liulinjun2code/AnimationUtils.git", :commit => '700b64d48a029aa7c71b5f7bf40137edc366bde0' }
+  s.source       = { :git => "https://github.com/liulinjun2code/AnimationUtils.git", :commit => 'e91f822bf30fb4fc43a636f57de3ffad4c447373' }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "AnimationUtils", "AnimationUtils/Animations/*.{h,m}"
+  s.source_files  = "Animations", "AnimationUtils/Animations/**/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -115,8 +117,8 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+  # s.framework  = "UIKit"
+  # s.frameworks = "UIKit", "CoreAnimation"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
