@@ -22,20 +22,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CA3-pg-Zf6">
-                                <rect key="frame" x="313" y="28" width="46" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Qcr-Gn-Gw2"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="16" y="629" width="62" height="30"/>
+                                <state key="normal" title="开始动画"/>
                                 <connections>
                                     <action selector="animationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IVc-U1-lfq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5G-Rl-vhZ">
+                                <rect key="frame" x="86" y="629" width="62" height="30"/>
+                                <state key="normal" title="暂停动画"/>
+                                <connections>
+                                    <action selector="pauseAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qN9-00-0zH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNq-uF-1jR">
+                                <rect key="frame" x="156" y="629" width="62" height="30"/>
+                                <state key="normal" title="恢复动画"/>
+                                <connections>
+                                    <action selector="resumeAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TRG-B0-Xp6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fms-GS-0dA">
+                                <rect key="frame" x="226" y="629" width="62" height="30"/>
+                                <state key="normal" title="停止动画"/>
+                                <connections>
+                                    <action selector="stopAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ykr-Oz-X26"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="CA3-pg-Zf6" secondAttribute="trailing" constant="16" id="0Wq-Tm-B9D"/>
-                            <constraint firstItem="CA3-pg-Zf6" firstAttribute="top" secondItem="Asj-qn-7lq" secondAttribute="bottom" constant="8" id="uCX-OX-r27"/>
+                            <constraint firstItem="HgN-hF-WbH" firstAttribute="top" secondItem="CA3-pg-Zf6" secondAttribute="bottom" constant="8" id="1mI-Ru-il1"/>
+                            <constraint firstItem="HgN-hF-WbH" firstAttribute="top" secondItem="Fms-GS-0dA" secondAttribute="bottom" constant="8" id="Gi4-eX-DuZ"/>
+                            <constraint firstItem="CA3-pg-Zf6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="Kwc-mK-Ifh"/>
+                            <constraint firstItem="wNq-uF-1jR" firstAttribute="leading" secondItem="o5G-Rl-vhZ" secondAttribute="trailing" constant="8" id="PaI-9g-qm4"/>
+                            <constraint firstItem="Fms-GS-0dA" firstAttribute="leading" secondItem="wNq-uF-1jR" secondAttribute="trailing" constant="8" id="VWJ-eR-j0C"/>
+                            <constraint firstItem="o5G-Rl-vhZ" firstAttribute="leading" secondItem="CA3-pg-Zf6" secondAttribute="trailing" constant="8" id="dN2-84-Z9D"/>
+                            <constraint firstItem="HgN-hF-WbH" firstAttribute="top" secondItem="o5G-Rl-vhZ" secondAttribute="bottom" constant="8" id="eN2-ap-p3i"/>
+                            <constraint firstItem="HgN-hF-WbH" firstAttribute="top" secondItem="wNq-uF-1jR" secondAttribute="bottom" constant="8" id="pKN-oo-TWd"/>
                         </constraints>
                     </view>
                 </viewController>

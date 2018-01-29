@@ -16,6 +16,7 @@
 		95291D5D2019814D00C97589 /* AnimationUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95291D5C2019814D00C97589 /* AnimationUtilsTests.swift */; };
 		95291D682019814D00C97589 /* AnimationUtilsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95291D672019814D00C97589 /* AnimationUtilsUITests.swift */; };
 		95291D7B20199E2000C97589 /* RKBaseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95291D7A20199E2000C97589 /* RKBaseAnimation.swift */; };
+		952F6B24201EC39F000FB104 /* RKKeyframeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952F6B23201EC39F000FB104 /* RKKeyframeAnimation.swift */; };
 		953CF284201B03950058DE65 /* RKShaper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953CF283201B03950058DE65 /* RKShaper.swift */; };
 		953CF286201B0C740058DE65 /* RKAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953CF285201B0C740058DE65 /* RKAnimations.swift */; };
 /* End PBXBuildFile section */
@@ -53,6 +54,7 @@
 		95291D672019814D00C97589 /* AnimationUtilsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationUtilsUITests.swift; sourceTree = "<group>"; };
 		95291D692019814D00C97589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95291D7A20199E2000C97589 /* RKBaseAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKBaseAnimation.swift; sourceTree = "<group>"; };
+		952F6B23201EC39F000FB104 /* RKKeyframeAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKKeyframeAnimation.swift; sourceTree = "<group>"; };
 		953CF283201B03950058DE65 /* RKShaper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKShaper.swift; sourceTree = "<group>"; };
 		953CF285201B0C740058DE65 /* RKAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKAnimations.swift; sourceTree = "<group>"; };
 		CCF0E7EF1A7DBC76C92FE789 /* Pods_AnimationUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimationUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +147,7 @@
 			children = (
 				95291D7A20199E2000C97589 /* RKBaseAnimation.swift */,
 				953CF285201B0C740058DE65 /* RKAnimations.swift */,
+				952F6B23201EC39F000FB104 /* RKKeyframeAnimation.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				95291D482019814D00C97589 /* AppDelegate.swift in Sources */,
 				953CF286201B0C740058DE65 /* RKAnimations.swift in Sources */,
 				953CF284201B03950058DE65 /* RKShaper.swift in Sources */,
+				952F6B24201EC39F000FB104 /* RKKeyframeAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
