@@ -31,7 +31,8 @@ class ViewController: UIViewController {
     
     @IBAction func animationAction(_ sender: UIButton) {
         
-        /* 关键帧动画
+        
+        /* 关键帧动画1 - Values
         let width = self.view.frame.size.width
         let vales = [NSValue.init(cgPoint: self.redView.layer.frame.origin),
                      NSValue.init(cgPoint: CGPoint(x: width - self.redView.frame.size.width/2, y: self.redView.frame.origin.y)),
@@ -49,7 +50,7 @@ class ViewController: UIViewController {
         }
         */
         
-        /* 按照弧线轨迹运行
+        /* 关键帧动画1 - Path
         self.redView.rk_addKeyframeAnimation { (animation) in
             
             let path = CGMutablePath()
@@ -59,7 +60,7 @@ class ViewController: UIViewController {
         }
         */
         
-        /* 基本动画组合动画
+        /* 基本动画 - 组合动画
         self.redView.rk_addAnimations { (animation) in
 
             let point = RKPoint(fromPoint: self.redView.layer.position, toPoint: CGPoint(x: 100, y: 400))
@@ -67,6 +68,7 @@ class ViewController: UIViewController {
             let scaleSize = RKSize(fromSize: self.redView.frame.size, toSize: CGSize(width: 200, height: 50))
             let scaleRate = RKRate(fromRate: 1.0, toRate: 2.0)
             let rotation = RKAngle(fromAngle: .pi, toAngle: .pi*4)
+            let color = RKColor(fromColor: UIColor.red, toColor: UIColor.green)
 
             //let path = UIBezierPath(ovalIn: CGRect(x: 50, y: 220, width: 200, height: 200))
             //let _ = animation.scaleRate(rate: scaleRate, duration: 2.0).rotation(angle: rotation, duration: 2.0).bezierPath(bezierPath: path, duration: 2.0).repeatCount(count: 1.0).toBack()

@@ -33,6 +33,11 @@ struct RKAngle {
     var toAngle: Float = .pi*4
 }
 
+struct RKColor {
+    var fromColor:UIColor = UIColor.white
+    var toColor:UIColor = UIColor.white
+}
+
 class RKBaseAnimation: NSObject {
     
     var groups = Array<CAAnimation>()
@@ -125,6 +130,33 @@ class RKBaseAnimation: NSObject {
         animation.keyPath = "opacity"
         animation.fromValue = alpha.fromAlpha
         animation.toValue = alpha.toAlpha
+        animation.duration = duration
+        animation.autoreverses = false
+        animation.isRemovedOnCompletion = false
+        animation.fillMode = kCAFillModeForwards
+        
+        if !isSync {
+            animation.beginTime = self.time
+        }
+        
+        groups.append(animation)
+        time += duration
+        
+        return self
+    }
+    
+    /// 颜色变化
+    ///
+    /// - Parameters:
+    ///   - color: 颜色
+    ///   - duration: 动画时长
+    /// - Returns: Self
+    func color(color: RKColor, duration: TimeInterval) -> RKBaseAnimation {
+        
+        let animation = CABasicAnimation()
+        animation.keyPath = "backgroundColor"
+        animation.fromValue = color.fromColor.cgColor
+        animation.toValue = color.toColor.cgColor
         animation.duration = duration
         animation.autoreverses = false
         animation.isRemovedOnCompletion = false
